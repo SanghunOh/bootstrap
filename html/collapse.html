@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <p>
+        <a href="#collapseEx" data-toggle="collapse" class="btn btn-primary">href 링크</a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEx" aria-expanded="false" aria-controls="collapseEx">
+            data-target버튼
+        </button>
+    </p>
+    <div id="collapseEx" class="collapse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi fugit quasi illo possimus consequatur eius corporis aliquid quod sapiente, nulla earum ab omnis, laborum perferendis recusandae officia deleniti porro enim.</p>
+    </div>
+
+    <hr>
+
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+    </p>
+
+    <div class="row">
+        <div class="col">
+            <div class="card border-dark collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et enim, veniam, ratione harum quod nemo modi doloremque expedita amet voluptatum nam, tenetur. Ipsa, exercitationem, laboriosam. Necessitatibus architecto, dolor accusamus possimus.
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-dark collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quaerat itaque omnis aliquam deserunt, quo nesciunt quisquam in accusantium nobis, odio illum deleniti, quos atque minus rem ad et optio.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
